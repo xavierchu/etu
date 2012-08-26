@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+		version="2.0">
+
+	<description>Etu Framework JSP Tag Library</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>etu</short-name>
+	<uri>http://www.etu.org/tags</uri>
+
+	<tag>
+		<description>
+			引入资源文件.
+		</description>
+		<name>import</name>
+		<tag-class>org.summer.etu.servlet.tags.ResourceImportTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description>Set the default value for HTML escaping, to be put
+				into the current PageContext.</description>
+			<name>src</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+</taglib>
